@@ -2,8 +2,16 @@
 <html>
   <title>Nicolas' blog</title>
   <body>
-      <h1>Welcome to my <em>awesome</em> blog!</h1>
+      <h1>The <em>awesome</em> blog of Nicolas!</h1>
       <p>I've made this website using the django girls tutorial :-)</p>
       <p>Check out my <a href="https://www.linkedin.com/in/nicolas-grunwald-921580218/">linked-in</a>!</p>
+      <h3>Check my posts:</h3>
+      {% for post in posts %}
+      <article>
+          <h4>{{post.title}}</h4>
+          <p>{{ post.text|linebreaksbr }}</p>
+          <time>published: {{ post.published_date }}</time>
+      </article>
+{% endfor %}
   </body>
 </html>
