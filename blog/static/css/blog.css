@@ -1,0 +1,15 @@
+h1 {
+  font-family: "Lobster";
+  color: #C23500
+}
+
+h2 {
+  font-family: "Lobster";
+  color: #00008B;
+}
+
+body {
+    padding-left: 50px;
+    padding-top: 40px;
+    background-color: #DBF9FC
+}
