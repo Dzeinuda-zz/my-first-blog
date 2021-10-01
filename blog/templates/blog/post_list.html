@@ -1,17 +1,28 @@
+{% load static %}
 <!DOCTYPE html>
-<html>
-  <title>Nicolas' blog</title>
+<html lang="en" dir="ltr">
+
+  <head>
+    <title>Nicolas' Blog!</title>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+  </head>
+
   <body>
-      <h1>The <em>awesome</em> blog of Nicolas!</h1>
-      <p>I've made this website using the django girls tutorial :-)</p>
-      <p>Check out my <a href="https://www.linkedin.com/in/nicolas-grunwald-921580218/">linked-in</a>!</p>
-      <h3>Check my posts:</h3>
-      {% for post in posts %}
-      <article>
-          <h4>{{post.title}}</h4>
-          <p>{{ post.text|linebreaksbr }}</p>
-          <time>published: {{ post.published_date }}</time>
-      </article>
-{% endfor %}
+    <h1>Welcome to the <em>awesome</em> blog of Nicolas! </h1>
+    <hr>
+    <h2>BlogPosts</h2>
+    {% for post in posts %}
+    <article class="">
+      <h4>{{post.title}}</h4>
+      <p>{{post.text|linebreaksbr}}</p>
+      <time>published: {{ post.published_date }}</time>
+    </article>
+    {% endfor %}
+    <hr>
+    <h4>Contact info:</h4>
+    <p>Check out my <a href=https://www.linkedin.com/in/nicolas-grunwald-921580218/"">linked-in,</a> </p>
+    <p>or write me an e-mail at nicolasgrunwald@yahoo.dk !</p>
   </body>
 </html>
