@@ -1,15 +1,78 @@
-h1 {
-  font-family: "Lobster";
-  color: #C23500
+.page-header {
+    background-color: #006400;
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding: 20px 20px 20px 30px;
 }
 
-h2 {
-  font-family: "Lobster";
-  color: #00008B;
+.page-header h1,
+.page-header h1 a,
+.page-header h1 a:visited,
+.page-header h1 a:active {
+    color: #ffffff;
+    font-size: 36pt;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Orbitron', cursive;
+}
+
+.date {
+    color: #828282;
+}
+
+.save {
+    float: right;
+}
+
+.post-form textarea,
+.post-form input {
+    width: 100%;
+}
+
+.top-menu,
+.top-menu:hover,
+.top-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+}
+
+.post {
+    margin-bottom: 70px;
+}
+
+.post h2 a,
+.post h2 a:visited {
+    color: #000000;
+}
+
+.post > .date,
+.post > .actions {
+    float: right;
+}
+
+.btn-default,
+.btn-default:visited {
+    color: #C25100;
+    background: none;
+    border-color: #C25100;
+}
+
+.btn-default:hover {
+    color: #FFFFFF;
+    background-color: #C25100;
 }
 
 body {
-    padding-left: 50px;
-    padding-top: 40px;
-    background-color: #DBF9FC
+  background-color: #D8D8D8;
+}
+
+p {
+  font-family: "Arial";
 }

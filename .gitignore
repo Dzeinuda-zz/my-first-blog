@@ -30,6 +30,3 @@ $RECYCLE.BIN/
 .vscode/
 .history/
 *.code-workspace
-
-# Other
-blog/templates/blog/post_list_old.html
